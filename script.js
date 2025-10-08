@@ -57,13 +57,14 @@ jobForm.addEventListener('submit', function(e) {
     e.preventDefault();
     const fields = [
         { id: 'jobTitle', label: 'Título da Vaga' },
+        { id: 'jobLocation', label: 'Localização' },
         { id: 'jobDescription', label: 'Descrição da Vaga' }
     ];
     if (validateForm(fields)) {
         const job = {
             title: document.getElementById('jobTitle').value,
             description: document.getElementById('jobDescription').value,
-            location: document.getElementById('jobLocation').value || 'Não especificado'
+            location: document.getElementById('jobLocation').value
         };
         jobs.push(job);
         renderList('jobList', jobs);
@@ -78,8 +79,8 @@ courseForm.addEventListener('submit', function(e) {
     e.preventDefault();
     const fields = [
         { id: 'courseTitle', label: 'Título do Curso' },
-        { id: 'courseDescription', label: 'Descrição do Curso' },
-        { id: 'courseLevel', label: 'Nível do Curso' }
+        { id: 'courseLevel', label: 'Nível do Curso' },
+        { id: 'courseDescription', label: 'Descrição do Curso' }
     ];
     if (validateForm(fields)) {
         const course = {
