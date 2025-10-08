@@ -31,19 +31,26 @@
         <section id="home" class="section">
             <div class="container">
                 <h2>Bem-vindo à TI Resolve</h2>
-                <p>Resolvendo o problema crônico de falta de profissionais qualificados em TI, conectamos empresas a talentos e oferecemos treinamentos práticos e acessíveis. Explore vagas, cursos e eventos para acelerar sua carreira ou encontrar o profissional ideal.</p>
-                <div class="stats">
-                    <div class="stat-item">
-                        <h3>500+</h3>
-                        <p>Vagas Publicadas</p>
+                <div class="home-content">
+                    <div class="text">
+                        <p>A falta de profissionais qualificados em TI é um problema crônico no Brasil e no mundo. Nossa plataforma conecta empresas com talentos emergentes, oferece treinamentos gratuitos e pagos, e promove eventos para capacitação. Junte-se a nós para resolver esse desafio!</p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <h3>500+</h3>
+                                <p>Vagas Publicadas</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>1000+</h3>
+                                <p>Profissionais Capacitados</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>50+</h3>
+                                <p>Cursos Disponíveis</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <h3>1000+</h3>
-                        <p>Profissionais Capacitados</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>50+</h3>
-                        <p>Cursos Disponíveis</p>
+                    <div class="image">
+                        <img src="https://images.pexels.com/photos/3184297/pexels-photo-3184297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Equipe diversa colaborando em TI">
                     </div>
                 </div>
             </div>
@@ -59,19 +66,25 @@
                 <ul class="job-list" id="jobList"></ul>
                 <form id="jobForm" class="form">
                     <h3>Anunciar uma Vaga</h3>
-                    <div class="form-group">
-                        <input type="text" id="jobTitle" placeholder="Título da Vaga" required>
-                        <span class="error" id="jobTitleError"></span>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" id="jobTitle" placeholder="Título da Vaga" required>
+                            <span class="error" id="jobTitleError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="jobLocation" placeholder="Localização (ex.: Remoto, São Paulo)" required>
+                            <span class="error" id="jobLocationError"></span>
+                        </div>
                     </div>
                     <div class="form-group">
                         <textarea id="jobDescription" placeholder="Descrição da Vaga" required></textarea>
                         <span class="error" id="jobDescriptionError"></span>
                     </div>
-                    <div class="form-group">
-                        <input type="text" id="jobLocation" placeholder="Localização (ex.: Remoto, São Paulo)">
-                    </div>
                     <button type="submit">Anunciar Vaga</button>
                 </form>
+                <div class="section-image">
+                    <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Equipe em reunião de TI">
+                </div>
             </div>
         </section>
 
@@ -85,24 +98,29 @@
                 <ul class="course-list" id="courseList"></ul>
                 <form id="courseForm" class="form">
                     <h3>Sugestão de Curso</h3>
-                    <div class="form-group">
-                        <input type="text" id="courseTitle" placeholder="Título do Curso" required>
-                        <span class="error" id="courseTitleError"></span>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" id="courseTitle" placeholder="Título do Curso" required>
+                            <span class="error" id="courseTitleError"></span>
+                        </div>
+                        <div class="form-group">
+                            <select id="courseLevel" required>
+                                <option value="" disabled selected>Nível do Curso</option>
+                                <option value="Iniciante">Iniciante</option>
+                                <option value="Intermediário">Intermediário</option>
+                                <option value="Avançado">Avançado</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form-group">
                         <textarea id="courseDescription" placeholder="Descrição do Curso" required></textarea>
                         <span class="error" id="courseDescriptionError"></span>
                     </div>
-                    <div class="form-group">
-                        <select id="courseLevel" required>
-                            <option value="" disabled selected>Nível do Curso</option>
-                            <option value="Iniciante">Iniciante</option>
-                            <option value="Intermediário">Intermediário</option>
-                            <option value="Avançado">Avançado</option>
-                        </select>
-                    </div>
                     <button type="submit">Enviar Sugestão</button>
                 </form>
+                <div class="section-image">
+                    <img src="https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Profissional codificando">
+                </div>
             </div>
         </section>
 
@@ -110,21 +128,29 @@
             <div class="container">
                 <h2>Contato</h2>
                 <p>Entre em contato para parcerias, dúvidas ou sugestões.</p>
-                <form id="contactForm" class="form">
-                    <div class="form-group">
-                        <input type="text" id="name" placeholder="Seu Nome" required>
-                        <span class="error" id="nameError"></span>
+                <div class="contact-content">
+                    <form id="contactForm" class="form">
+                        <h3>Envie sua Mensagem</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Seu Nome" required>
+                                <span class="error" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Seu Email" required>
+                                <span class="error" id="emailError"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Mensagem" required></textarea>
+                            <span class="error" id="messageError"></span>
+                        </div>
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                    <div class="image">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Equipe em contato">
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder="Seu Email" required>
-                        <span class="error" id="emailError"></span>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" placeholder="Mensagem" required></textarea>
-                        <span class="error" id="messageError"></span>
-                    </div>
-                    <button type="submit">Enviar Mensagem</button>
-                </form>
+                </div>
             </div>
         </section>
     </main>
