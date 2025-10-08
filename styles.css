@@ -92,11 +92,37 @@ nav ul li a:hover {
     margin: 0 auto 30px;
 }
 
+/* Conteúdo Home */
+.home-content, .contact-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.home-content .text, .contact-content .form {
+    flex: 1;
+}
+
+.home-content .image, .contact-content .image {
+    flex: 1;
+}
+
+.home-content .image img, .contact-content .image img, .section-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-image {
+    margin-top: 40px;
+    text-align: center;
+}
+
 /* Estatísticas */
 .stats {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-around;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -106,7 +132,7 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    min-width: 200px;
+    min-width: 150px;
 }
 
 .stat-item h3 {
@@ -138,6 +164,7 @@ nav ul li a:hover {
 .job-list, .course-list {
     list-style: none;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -167,7 +194,7 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
+    max-width: 600px;
     margin: 20px auto;
 }
 
@@ -175,6 +202,12 @@ nav ul li a:hover {
     font-size: 1.5rem;
     color: #007bff;
     margin-bottom: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .form-group {
@@ -259,6 +292,14 @@ footer {
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    .home-content, .contact-content {
+        flex-direction: column;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
     }
 
     .stats {
