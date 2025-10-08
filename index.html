@@ -3,63 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataforma TI Resolve - Solucionando a Falta de Profissionais em TI</title>
+    <title>TI Resolve - Conectando Talentos e Oportunidades em TI</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Plataforma TI Resolve</h1>
-        <p>Solucionando o problema crônico de falta de profissionais na área de TI</p>
+        <div class="container">
+            <h1><i class="fas fa-code"></i> TI Resolve</h1>
+            <p>Conectando talentos, empresas e capacitação para transformar a área de TI</p>
+        </div>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="#home">Início</a></li>
-            <li><a href="#vagas">Vagas</a></li>
-            <li><a href="#cursos">Cursos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="#vagas"><i class="fas fa-briefcase"></i> Vagas</a></li>
+                <li><a href="#cursos"><i class="fas fa-graduation-cap"></i> Cursos</a></li>
+                <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <section id="home">
-        <h2>Bem-vindo à Plataforma TI Resolve</h2>
-        <p>A falta de profissionais qualificados em TI é um problema crônico no Brasil e no mundo. Nossa plataforma conecta empresas com talentos emergentes, oferece treinamentos gratuitos e pagos, e promove eventos para capacitação. Junte-se a nós para resolver esse desafio!</p>
-    </section>
+    <main>
+        <section id="home" class="section">
+            <div class="container">
+                <h2>Bem-vindo à TI Resolve</h2>
+                <p>Resolvendo o problema crônico de falta de profissionais qualificados em TI, conectamos empresas a talentos e oferecemos treinamentos práticos e acessíveis. Explore vagas, cursos e eventos para acelerar sua carreira ou encontrar o profissional ideal.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Vagas Publicadas</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>1000+</h3>
+                        <p>Profissionais Capacitados</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Cursos Disponíveis</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="vagas">
-        <h2>Vagas em TI</h2>
-        <p>Encontre ou anuncie vagas para profissionais de TI.</p>
-        <ul class="job-list" id="jobList"></ul>
-        <form id="jobForm">
-            <h3>Anuncie uma Vaga</h3>
-            <input type="text" id="jobTitle" placeholder="Título da Vaga" required>
-            <textarea id="jobDescription" placeholder="Descrição da Vaga" required></textarea>
-            <button type="submit">Anunciar Vaga</button>
-        </form>
-    </section>
+        <section id="vagas" class="section">
+            <div class="container">
+                <h2>Vagas em TI</h2>
+                <p>Encontre oportunidades ou anuncie vagas para profissionais de TI.</p>
+                <div class="filter">
+                    <input type="text" id="jobFilter" placeholder="Filtrar vagas por cargo ou tecnologia...">
+                </div>
+                <ul class="job-list" id="jobList"></ul>
+                <form id="jobForm" class="form">
+                    <h3>Anunciar uma Vaga</h3>
+                    <div class="form-group">
+                        <input type="text" id="jobTitle" placeholder="Título da Vaga" required>
+                        <span class="error" id="jobTitleError"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="jobDescription" placeholder="Descrição da Vaga" required></textarea>
+                        <span class="error" id="jobDescriptionError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="jobLocation" placeholder="Localização (ex.: Remoto, São Paulo)">
+                    </div>
+                    <button type="submit">Anunciar Vaga</button>
+                </form>
+            </div>
+        </section>
 
-    <section id="cursos">
-        <h2>Cursos e Treinamentos</h2>
-        <p>Acesse cursos para se qualificar em TI.</p>
-        <ul class="course-list" id="courseList"></ul>
-        <form id="courseForm">
-            <h3>Sugira um Curso</h3>
-            <input type="text" id="courseTitle" placeholder="Título do Curso" required>
-            <textarea id="courseDescription" placeholder="Descrição do Curso" required></textarea>
-            <button type="submit">Sugestão de Curso</button>
-        </form>
-    </section>
+        <section id="cursos" class="section">
+            <div class="container">
+                <h2>Cursos e Treinamentos</h2>
+                <p>Capacite-se com nossos cursos gratuitos e pagos em diversas áreas de TI.</p>
+                <div class="filter">
+                    <input type="text" id="courseFilter" placeholder="Filtrar cursos por título ou tecnologia...">
+                </div>
+                <ul class="course-list" id="courseList"></ul>
+                <form id="courseForm" class="form">
+                    <h3>Sugestão de Curso</h3>
+                    <div class="form-group">
+                        <input type="text" id="courseTitle" placeholder="Título do Curso" required>
+                        <span class="error" id="courseTitleError"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="courseDescription" placeholder="Descrição do Curso" required></textarea>
+                        <span class="error" id="courseDescriptionError"></span>
+                    </div>
+                    <div class="form-group">
+                        <select id="courseLevel" required>
+                            <option value="" disabled selected>Nível do Curso</option>
+                            <option value="Iniciante">Iniciante</option>
+                            <option value="Intermediário">Intermediário</option>
+                            <option value="Avançado">Avançado</option>
+                        </select>
+                    </div>
+                    <button type="submit">Enviar Sugestão</button>
+                </form>
+            </div>
+        </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco para parcerias ou dúvidas.</p>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Seu Nome" required>
-            <input type="email" id="email" placeholder="Seu Email" required>
-            <textarea id="message" placeholder="Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+        <section id="contato" class="section">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Entre em contato para parcerias, dúvidas ou sugestões.</p>
+                <form id="contactForm" class="form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Seu Nome" required>
+                        <span class="error" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Seu Email" required>
+                        <span class="error" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Mensagem" required></textarea>
+                        <span class="error" id="messageError"></span>
+                    </div>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TI Resolve. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
