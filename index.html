@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma TI Resolve - Solucionando a Falta de Profissionais em TI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Plataforma TI Resolve</h1>
+        <p>Solucionando o problema crônico de falta de profissionais na área de TI</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#vagas">Vagas</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Bem-vindo à Plataforma TI Resolve</h2>
+        <p>A falta de profissionais qualificados em TI é um problema crônico no Brasil e no mundo. Nossa plataforma conecta empresas com talentos emergentes, oferece treinamentos gratuitos e pagos, e promove eventos para capacitação. Junte-se a nós para resolver esse desafio!</p>
+    </section>
+
+    <section id="vagas">
+        <h2>Vagas em TI</h2>
+        <p>Encontre ou anuncie vagas para profissionais de TI.</p>
+        <ul class="job-list" id="jobList"></ul>
+        <form id="jobForm">
+            <h3>Anuncie uma Vaga</h3>
+            <input type="text" id="jobTitle" placeholder="Título da Vaga" required>
+            <textarea id="jobDescription" placeholder="Descrição da Vaga" required></textarea>
+            <button type="submit">Anunciar Vaga</button>
+        </form>
+    </section>
+
+    <section id="cursos">
+        <h2>Cursos e Treinamentos</h2>
+        <p>Acesse cursos para se qualificar em TI.</p>
+        <ul class="course-list" id="courseList"></ul>
+        <form id="courseForm">
+            <h3>Sugira um Curso</h3>
+            <input type="text" id="courseTitle" placeholder="Título do Curso" required>
+            <textarea id="courseDescription" placeholder="Descrição do Curso" required></textarea>
+            <button type="submit">Sugestão de Curso</button>
+        </form>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para parcerias ou dúvidas.</p>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu Email" required>
+            <textarea id="message" placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Plataforma TI Resolve. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
