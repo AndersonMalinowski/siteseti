@@ -3,167 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TI Resolve - Conectando Talentos e Oportunidades em TI</title>
+    <title>ITSkills Hub - Resolvendo o Déficit de Profissionais em TI</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <div class="container">
-            <h1><i class="fas fa-code"></i> TI Resolve</h1>
-            <p>Conectando talentos, empresas e capacitação para transformar a área de TI</p>
-        </div>
+        <h1>ITSkills Hub</h1>
+        <p>Transformando o futuro da TI: Formação acessível para todos</p>
     </header>
 
     <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#home"><i class="fas fa-home"></i> Início</a></li>
-                <li><a href="#vagas"><i class="fas fa-briefcase"></i> Vagas</a></li>
-                <li><a href="#cursos"><i class="fas fa-graduation-cap"></i> Cursos</a></li>
-                <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
-            </ul>
-        </div>
+        <a href="#inicio">Início</a>
+        <a href="#problema">O Problema</a>
+        <a href="#solucao">Nossa Solução</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#contato">Contato</a>
     </nav>
 
-    <main>
-        <section id="home" class="section">
-            <div class="container">
-                <h2>Bem-vindo à TI Resolve</h2>
-                <div class="home-content">
-                    <div class="text">
-                        <p>A falta de profissionais qualificados em TI é um problema crônico no Brasil e no mundo. Nossa plataforma conecta empresas com talentos emergentes, oferece treinamentos gratuitos e pagos, e promove eventos para capacitação. Junte-se a nós para resolver esse desafio!</p>
-                        <div class="stats">
-                            <div class="stat-item">
-                                <h3>500+</h3>
-                                <p>Vagas Publicadas</p>
-                            </div>
-                            <div class="stat-item">
-                                <h3>1000+</h3>
-                                <p>Profissionais Capacitados</p>
-                            </div>
-                            <div class="stat-item">
-                                <h3>50+</h3>
-                                <p>Cursos Disponíveis</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <img src="https://images.pexels.com/photos/3184297/pexels-photo-3184297.jpeg?auto=compress&cs=tinysrgb&w=900h=650&dpr=1" alt="Equipe diversa colaborando em TI">
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Bem-vindo ao ITSkills Hub</h2>
+            <p>Estamos aqui para resolver o déficit crônico de profissionais em TI, oferecendo treinamentos gratuitos e pagos, mentoria e conexão com o mercado de trabalho.</p>
+            <button onclick="scrollToSection('solucao')">Saiba Mais</button>
+        </div>
+    </section>
 
-        <section id="vagas" class="section">
-            <div class="container">
-                <h2>Vagas em TI</h2>
-                <p>Encontre oportunidades ou anuncie vagas para profissionais de TI.</p>
-                <div class="filter">
-                    <input type="text" id="jobFilter" placeholder="Filtrar vagas por cargo ou tecnologia...">
-                </div>
-                <ul class="job-list" id="jobList"></ul>
-                <form id="jobForm" class="form">
-                    <h3>Anunciar uma Vaga</h3>
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <input type="text" id="jobTitle" placeholder="Título da Vaga" required>
-                            <span class="error" id="jobTitleError"></span>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="jobLocation" placeholder="Localização (ex.: Remoto, São Paulo)" required>
-                            <span class="error" id="jobLocationError"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="jobDescription" placeholder="Descrição da Vaga" required></textarea>
-                        <span class="error" id="jobDescriptionError"></span>
-                    </div>
-                    <button type="submit">Anunciar Vaga</button>
-                </form>
-                <div class="section-image">
-                    <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Equipe em reunião de TI">
-                </div>
-            </div>
-        </section>
+    <section id="problema" class="section">
+        <div class="problem">
+            <h2>O Problema Crônico do Déficit em TI</h2>
+            <p>No Brasil e no mundo, há uma escassez persistente de profissionais qualificados em Tecnologia da Informação. De acordo com relatórios recentes, o mercado de TI precisa de mais de 500 mil profissionais até 2025, mas a formação tradicional não acompanha a demanda. Fatores como falta de acesso a educação de qualidade, custo elevado de cursos e desconexão entre academia e mercado agravam o problema.</p>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Gráfico mostrando déficit de profissionais em TI" style="width:100%; height:300px; object-fit:cover; border-radius:8px;">
+            <p><strong>Impactos:</strong> Empresas enfrentam dificuldades para inovar, atrasos em projetos e custos elevados com contratações internacionais.</p>
+        </div>
+    </section>
 
-        <section id="cursos" class="section">
-            <div class="container">
-                <h2>Cursos e Treinamentos</h2>
-                <p>Capacite-se com nossos cursos gratuitos e pagos em diversas áreas de TI.</p>
-                <div class="filter">
-                    <input type="text" id="courseFilter" placeholder="Filtrar cursos por título ou tecnologia...">
+    <section id="solucao" class="section">
+        <div class="solution">
+            <h2>Nossa Solução: Plataforma Integrada de Formação e Empregabilidade</h2>
+            <p>O ITSkills Hub é uma plataforma online completa projetada para capacitar milhares de pessoas anualmente. Oferecemos cursos práticos, mentoria personalizada e uma rede de parcerias com empresas para colocação no mercado. Nosso modelo é acessível: cursos gratuitos para iniciantes e premium para certificações avançadas.</p>
+            <div class="features">
+                <div class="feature">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ícone de aprendizado online">
+                    <h3>Cursos Online Gratuitos e Pagos</h3>
+                    <p>Conteúdo atualizado com as tecnologias mais demandadas, como Python, Cloud Computing e Cybersecurity.</p>
                 </div>
-                <ul class="course-list" id="courseList"></ul>
-                <form id="courseForm" class="form">
-                    <h3>Sugestão de Curso</h3>
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <input type="text" id="courseTitle" placeholder="Título do Curso" required>
-                            <span class="error" id="courseTitleError"></span>
-                        </div>
-                        <div class="form-group">
-                            <select id="courseLevel" required>
-                                <option value="" disabled selected>Nível do Curso</option>
-                                <option value="Iniciante">Iniciante</option>
-                                <option value="Intermediário">Intermediário</option>
-                                <option value="Avançado">Avançado</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="courseDescription" placeholder="Descrição do Curso" required></textarea>
-                        <span class="error" id="courseDescriptionError"></span>
-                    </div>
-                    <button type="submit">Enviar Sugestão</button>
-                </form>
-                <div class="section-image">
-                    <img src="https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Profissional codificando">
+                <div class="feature">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ícone de mentoria">
+                    <h3>Mentoria Personalizada</h3>
+                    <p>Conectamos alunos com mentores experientes da indústria para orientação carreira.</p>
                 </div>
-            </div>
-        </section>
-
-        <section id="contato" class="section">
-            <div class="container">
-                <h2>Contato</h2>
-                <p>Entre em contato para parcerias, dúvidas ou sugestões.</p>
-                <div class="contact-content">
-                    <form id="contactForm" class="form">
-                        <h3>Envie sua Mensagem</h3>
-                        <div class="form-grid">
-                            <div class="form-group">
-                                <input type="text" id="name" placeholder="Seu Nome" required>
-                                <span class="error" id="nameError"></span>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" placeholder="Seu Email" required>
-                                <span class="error" id="emailError"></span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" placeholder="Mensagem" required></textarea>
-                            <span class="error" id="messageError"></span>
-                        </div>
-                        <button type="submit">Enviar Mensagem</button>
-                    </form>
-                    <div class="image">
-                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Equipe em contato">
-                    </div>
+                <div class="feature">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ícone de emprego">
+                    <h3>Conexão com Empresas</h3>
+                    <p>Parcerias com gigantes como Google, Microsoft e startups para vagas exclusivas aos nossos alunos.</p>
                 </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 TI Resolve. Todos os direitos reservados.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
+    </section>
+
+    <section id="cursos" class="section">
+        <div class="courses">
+            <h2>Nossos Cursos Destaque</h2>
+            <p>Escolha o caminho que se adequa ao seu nível e objetivos. Todos os cursos incluem projetos reais e certificados.</p>
+            <div class="course-grid">
+                <div class="course">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Curso de Desenvolvimento Web">
+                    <h3>Desenvolvimento Web Full-Stack</h3>
+                    <p>Aprenda HTML, CSS, JavaScript, React e Node.js. Duração: 3 meses. Gratuito.</p>
+                    <button>Iniciar Agora</button>
+                </div>
+                <div class="course">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Curso de Data Science">
+                    <h3>Data Science e Análise de Dados</h3>
+                    <p>Python, SQL, Machine Learning. Duração: 4 meses. R$ 199/mês.</p>
+                    <button>Inscrever-se</button>
+                </div>
+                <div class="course">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Curso de Cybersecurity">
+                    <h3>Cybersecurity Básico</h3>
+                    <p>Segurança de redes, ética hacker. Duração: 2 meses. Gratuito.</p>
+                    <button>Iniciar Agora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <h2>Entre em Contato</h2>
+        <p>Envie-nos uma mensagem para saber mais sobre como podemos ajudar você a entrar no mundo da TI.</p>
+        <form>
+            <input type="text" placeholder="Seu Nome"><br>
+            <input type="email" placeholder="Seu Email"><br>
+            <textarea placeholder="Sua Mensagem"></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ITSkills Hub. Todos os direitos reservados. | Contato: contato@itskillshub.com | (11) 99999-9999</p>
     </footer>
 
     <script src="script.js"></script>
